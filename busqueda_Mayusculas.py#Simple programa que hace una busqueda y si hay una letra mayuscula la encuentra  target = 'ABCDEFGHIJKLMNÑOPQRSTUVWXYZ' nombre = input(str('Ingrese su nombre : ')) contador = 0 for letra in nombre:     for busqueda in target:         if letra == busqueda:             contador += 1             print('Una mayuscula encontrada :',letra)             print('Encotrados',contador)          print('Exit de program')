@@ -1,0 +1,13 @@
+#Simple programa que hace una busqueda y si hay una letra mayuscula la encuentra
+
+target = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ'
+nombre = input(str('Ingrese su nombre : '))
+contador = 0
+for letra in nombre:
+    for busqueda in target:
+        if letra == busqueda:
+            contador += 1
+            print('Una mayuscula encontrada :',letra)
+           
+print('Encotrados',contador)         
+print('Exit de program')
